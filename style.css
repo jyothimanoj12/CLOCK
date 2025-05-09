@@ -1,0 +1,65 @@
+/* General page styling */
+body {
+    background: #141d2f;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  /* Clock title */
+  h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  /* Clock face */
+  .clock {
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
+    border-radius: 50%;
+    position: relative;
+    background: #141d2f;
+    box-shadow: 0 0 30px rgba(0, 166, 251, 0.4);
+  }
+  
+  /* Hands - base style */
+  .hand {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: left;
+    transform: rotate(90deg);
+    transition: transform 0.05s cubic-bezier(0.4, 2.3, 0.3, 1);
+    border-radius: 2px;
+  }
+  
+  /* Hour hand */
+  .hour {
+    width: 80px;
+    height: 6px;
+    background: white;
+    z-index: 1;
+  }
+  
+  /* Minute hand */
+  .minute {
+    width: 110px;
+    height: 4px;
+    background: #00a6fb;
+    z-index: 2;
+  }
+  
+  /* Second hand */
+  .second {
+    width: 130px;
+    height: 2px;
+    background: red;
+    z-index: 3;
+  }
+  
